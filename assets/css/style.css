@@ -1,22 +1,44 @@
+@font-face {
+    font-family: "sancreek";
+    src: url('../sancreek/Sancreek-Regular.ttf');
+}
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
 *{
     margin: 0;
     padding: 0;
 }
-
 body{
     display: grid;
     grid-template-columns: repeat(12,f1);
-    grid-template-rows: auto auto auto auto ;
+    grid-template-rows: auto auto auto;
+    font-family: "Montserrat", sans-serif;
 }
 /*--------------HEADER--------------*/
-
-
+header{
+    grid-column: 1/-1;
+    grid-row: 1/2;
+    position: absolute;
+    padding: 10px;
+}
+.bg-body-tertiary-fixed-top{
+    background-color: #272727a1;
+    border-radius: 10px;
+    border: solid 2px #1d1d1dad;
+}
+.navbar-toggler-icon{
+    filter: invert(-100%)
+}
 /*--------------MAIN--------------*/
 main{
     grid-column: 1/-1;
-    grid-row: 2/3;
+    grid-row: 1/3;
+    background-color: rgb(70, 56, 56)
 }
-
+footer{
+    grid-column: 1/-1;
+    grid-row: 3/-1;
+    background-color: rgb(128, 0, 0)
+}
 /*--------------banner--------------*/
 div#banner{
     background-image: url('../img/bannerPrincipal.png');
@@ -29,21 +51,59 @@ div#banner{
     align-items: center;
     flex-direction: column;
 }
+#banner h1, #banner h2{
+    font-family: "sancreek";
+    color: #fefefe;
+    text-shadow: 5px 5px 4px #000000c9;
+}
+#banner h1{
+    font-size: 100px;
+}
+#banner p{
+    color: #fefefe;
+    font-weight:lighter;
+    font-size: 25px;
+    text-align: center;
+    text-shadow: 3px 3px 4px #000000c9;
+    margin: 50px 0px;
+}
 .decoracao-titulo{
     display: flex;
     align-items: center;
 }
-hr.linha {
+.linha {
     width: 200px;
-    border: none;
-    border-top: 5px solid #888;
     margin: 0;
 }
-
+.esquerda{
+    transform: rotate(-2.0deg);
+}
 #decoracao-titulo-img img {
-    width: 50px;
+    width: 40px;
     display: block;
     margin: 0px 10px;
+    filter: invert(2) sepia(2) saturate(400%) hue-rotate(330deg);
+}
+#botao-reserva{
+    background-image: url('../img/madeira.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-decoration: none;
+    padding: 10px 60px;
+    border-radius: 50px;
+    border: solid 2px #ac773e;
+    color: #fefefe;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+}
+#botao-reserva:hover{
+    box-shadow: 0px 0px 15px #ac773ec4;
+}
+.botao-reserva{
+    width: 30px;
+    margin-right: 25px;
+    filter: invert(100%);
 }
 
 /*--------------FOOTER--------------*/
