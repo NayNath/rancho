@@ -107,10 +107,10 @@ hr.linha {
     align-items: center;
     flex-direction: column;
     padding: 0px 100px;
+    margin-bottom: 100px;
 }
 .programacaoLinha{
     width: 400px;
-    
 }
 #programacao h2{
     font-family: "sancreek";
@@ -121,7 +121,7 @@ hr.linha {
 div.conteiner-programacao{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-wrap: wrap;
 }
 div.conteiner-programacao-item{
@@ -130,7 +130,7 @@ div.conteiner-programacao-item{
     justify-content: center;
     flex-direction: column;
     padding: 20px 30px;
-    margin: 20px 25px;
+    margin: 20px;
     border: 5px solid transparent;
     border-radius: 10px;
     background-image: 
@@ -174,14 +174,92 @@ div.programacao-item-texto{
     width: 100px;
     text-align: center;
 }
-
-
-
-
+/*****************************************sobre*****************************************/
+#sobre{
+    background-image: url('../img/fundoSobreNos.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 100px;
+}
+.container-sobre{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0px 100px;
+}
+.container-sobre-textos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 50%;
+}
+hr.sobreLinha{
+    width:300px;
+}
+hr.sobreLinhaBaixo{
+    width:600px;
+}
+.container-sobre h2{
+    font-family: "sancreek";
+    color:#4D2816;
+    text-shadow: 4px 4px 4px #fefefe;
+    font-size: 60px;
+    text-align: center;
+}
+.container-sobre p{
+    color:#4D2816;
+    margin: 40px 0px;
+    font-size: 24px;
+    text-align: center;
+}
+.container-sobre-img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+.container-sobre-img img{
+    width:600px;
+}
+.Pcmediano {display: none;}
 .phone {display: none;}
 .tablet {display: none;}
 .pc {display: block;}
 
+@media screen and (min-width: 1200px) and (max-width: 1480px) {
+    .Pcmediano {display: block;}
+    .phone {display: none;}
+    .tablet {display:none;}
+    .pc {display: none;}
+/*****************************************sobre*****************************************/
+    .container-sobre{
+        padding: 0px 20px;
+    }
+    .container-sobre-textos{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        width: 50%;
+    }
+    hr.sobreLinha{
+        width: 250px;
+    }
+    hr.sobreLinhaBaixo{
+        width:560px;
+    }
+    .container-sobre h2{
+        font-size: 35px;
+    }
+    .container-sobre p{
+        font-size: 20px;
+    }
+    .container-sobre-img img{
+        width:400px;
+    }
+}
 @media screen and (min-width: 768px) and (max-width: 1200px) {
     .phone {display: none;}
     .tablet {display:block;}
@@ -189,11 +267,12 @@ div.programacao-item-texto{
 
     div#banner{
         background-image: url('../img/bannerPrincipal.png');
-        padding: 250px 50px;
+       
     }
     #banner h1{
         font-size: 60px;
         margin: 0px;
+        text-align: center;
     }
     #banner p{
         font-size: 18px;
@@ -202,7 +281,49 @@ div.programacao-item-texto{
     hr.linha {
         width: 200px;
     }
-        
+    /*****************************************programacao*****************************************/
+    #programacao{
+        padding: 0px 20px;
+    }
+    #programacao h2{
+        font-size: 40px;
+    }
+    div.conteiner-programacao-item{
+        margin: 10px;
+        padding: 15px 25px;
+    }
+/*****************************************sobre*****************************************/
+    .container-sobre{
+        padding: 0px 20px;
+    }
+    .container-sobre-textos{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        width: 50%;
+    }
+    hr.sobreLinha{
+        width:150px;
+    }
+    hr.sobreLinhaBaixo{
+        width:370px;
+    }
+    .container-sobre h2{
+        font-size: 35px;
+    }
+    .container-sobre p{
+        font-size: 20px;
+    }
+    .container-sobre-img{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 50%;
+    }
+    .container-sobre-img img{
+        width:350px;
+    }
 }
 @media screen and (max-width: 768px) {
     .phone {display: block;}
@@ -241,7 +362,6 @@ div.programacao-item-texto{
         filter: invert(100%);
     }
     /*****************************************programacao*****************************************/
-    
     #programacao{
         padding: 0px 20px;
         justify-content: center;
@@ -254,54 +374,31 @@ div.programacao-item-texto{
         justify-content: center;
     }
     div.conteiner-programacao-item{
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        margin: 20px;
+    }
+/*****************************************sobre*****************************************/
+    .container-sobre{
         flex-direction: column;
-        padding: 20px 30px;
-        margin: 20px 25px;
-        border: 5px solid transparent;
-        border-radius: 10px;
-        background-image: 
-            linear-gradient(#F6E1C2, #F6E1C2,#cfa368), 
-            linear-gradient(to top, #cfa368, #d8bb94, #d3b081, #CEA36B, #cc9e61);
-        background-origin: border-box;
-        background-clip: padding-box, border-box;
-        transition:  400ms;
+        padding: 0px 20px;
     }
-    div.conteiner-programacao-item:hover{
-        transform: scale(1.1);
-    }
-    div.programacao-item-img img{
-        width: 100px;
+    .container-sobre-textos{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
         margin: 20px 0px;
     }
-    div.programacao-item-texto{
-        text-align: center;
-        width: 200px;
-        height: 150px;
-        color: #4D2816;
-    }
-    .programacao-item-texto h4{
-        font-family: "sancreek";
+    .container-sobre h2{
         font-size: 30px;
     }
-    .programacao-item-texto p{
+    .container-sobre p{
         font-size: 18px;
     }
-    .programacao-item-botao{
-        background-color: #4D2816;
-        color: #fefefe;
-        padding: 10px 50px;
-        border:solid 3px #5a3d2e;
-        border-radius: 50px;
-        display: flex;
-        align-items: center;
+    hr.sobreLinhaBaixo{
+        width:250px;
     }
-    .programacao-item-botao p{
-        margin: 0;
-        width: 100px;
-        text-align: center;
+    .container-sobre-img img{
+        width:250px;
     }
 }
 
