@@ -73,14 +73,18 @@ h5.offcanvas-title {
 .navbar-nav .nav-link.active {
     color: #fefefe !important;
     font-weight: bold;
+    font-size: 18px;
 }
 a.nav-link.active:hover{
     color: #fefefe;
-    font-size: 23px;
+    font-size: 20px;
 }
 button.btn-close{
     filter: invert(100%);
     margin: 15px 0px;
+}
+.botao-reserva.menu{
+    margin-top: 50px;
 }
 /*--------------MAIN--------------*/
 main{
@@ -133,7 +137,7 @@ hr.linha {
     margin: 0px 10px;
     filter: invert(2) sepia(2) saturate(400%) hue-rotate(330deg);
 }
-#botao-reserva{
+.botao-reserva{
     /*background-image: url('../img/madeira.jpg');
     background-repeat: no-repeat;
     background-size: cover;*/
@@ -147,10 +151,10 @@ hr.linha {
     display: flex;
     align-items: center;
 }
-#botao-reserva:hover{
+.botao-reserva:hover{
     box-shadow: 0px 0px 20px #ac773ee8;
 }
-.botao-reserva{
+img.botao-reserva-img{
     width: 30px;
     margin-right: 25px;
     filter: invert(100%);
@@ -371,6 +375,42 @@ div.programacao-item-texto{
 }
 .card-btn:hover {
     background-color: #b89768;
+}
+/*****************************************localizacao*****************************************/
+#localizacao{
+    margin: 200px 0px;
+    padding: 0px 100px;
+}
+.container-localizacao-texto{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 50px;
+}
+.container-localizacao-texto img{
+    width: 1000px;
+}
+.container-localizacao-texto h2{
+    font-family: "sancreek", Georgia, serif;
+    text-shadow: 5px 5px 1px rgb(59, 59, 59);
+    font-size: 60px;
+    color: #fefefe;
+}
+.container-localizacao-mapa{
+    background-color: #cfa368;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.card-rede-sociai.madeira{
+    background-color: #e0e0e0;
+    padding: 20px 30px;
+    margin: 50px 0px;
+}
+.card-rede-sociai img{
+    width: 50px;
 }
 
 .Pcmediano {display: none;}
