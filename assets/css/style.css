@@ -17,26 +17,80 @@ body{
 header{
     grid-column: 1/-1;
     grid-row: 1/2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     position: absolute;
-    padding: 10px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding: 10px 50px;
+    box-sizing: border-box;
 }
-.bg-body-tertiary-fixed-top{
-    background-color: #272727a1;
-    border-radius: 10px;
-    border: solid 2px #1d1d1dad;
+.logo, .logo img{
+    width: 150px;
+}
+button.navbar-toggler{
+    background-color: #050505;
+    border-radius: 6px;
+    border: solid 3px #ac773e;
+    box-shadow: 3px 3px 10px #0505058a;
+}
+button.navbar-toggler:hover{
+    box-shadow: 0px 0px 20px #ac773ee8;
 }
 .navbar-toggler-icon{
-    filter: invert(-100%)
+    filter: invert(53%) sepia(45%) saturate(720%) hue-rotate(349deg) brightness(91%) contrast(88%);
+}
+.offcanvas.offcanvas-end{
+    background-color: #0e0e0ee7;
+    box-shadow: -4px -4px 10px #525252;
+}
+.offcanvas-header{
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.offcanvas-title {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+h5.offcanvas-title {
+    font-family: "sancreek";
+    color: #fefefe;
+    text-shadow: 5px 5px 4px #333333;
+    font-size: 25px;
+    Letter-spacing: 2px;
+}
+.linha-offcanvas img{
+    width: 430px;
+    margin-bottom: 15px;
+}
+.navbar-nav .nav-link.active {
+    color: #fefefe !important;
+    font-weight: bold;
+}
+a.nav-link.active:hover{
+    color: #fefefe;
+    font-size: 23px;
+}
+button.btn-close{
+    filter: invert(100%);
+    margin: 15px 0px;
 }
 /*--------------MAIN--------------*/
 main{
     grid-column: 1/-1;
     grid-row: 1/3;
-    background-color: #141d26
+    background-color: #030303
 }
 /*--------------banner--------------*/
 div#banner{
-    background-image: url('../img/bannerPrincipal1.png');
+    background-image: url('../img/bannerPrincipal.png');
     background-repeat: no-repeat;
     background-size: cover;
     padding: 250px 100px 200px;
@@ -221,7 +275,6 @@ div.programacao-item-texto{
 .container-sobre-img img{
     width:600px;
 }
-
 /*****************************************atividades*****************************************/
 #atividades {
     background-image: url('../img/fundoDiversao.png');
@@ -254,7 +307,7 @@ div.programacao-item-texto{
   display: block;
 }
 .card-atividades-texto {
-  background-color: #384653;
+  background-color: #3b3b3bee;
   border: solid 10px;
   border-image-source: url('../img/cordaGrossa.png');
   border-image-slice: 30; 
@@ -301,19 +354,23 @@ div.programacao-item-texto{
   font-size: 24px;
   max-width: 800px;
 }
-
-
-/* Botão Arredondado */
 .card-btn {
-  display: inline-block;
-  width: 110px;
-  height: 34px;
-  border: 2px solid #b89768;
-  border-radius: 20px;
-  transition: background-color 0.3s, border-color 0.3s;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #b89768;
+    background-color: #0f0f0f3a;
+    border-radius: 8px;
+    padding: 10px 30px; 
+}
+.card-btn h4 {
+    margin: 0; 
+    font-size: 20px;
+    color: #e0e0e0;
+    font-weight: bold;
 }
 .card-btn:hover {
-  background-color: #b89768;
+    background-color: #b89768;
 }
 
 .Pcmediano {display: none;}
@@ -365,7 +422,6 @@ div.programacao-item-texto{
 
     div#banner{
         background-image: url('../img/bannerPrincipal.png');
-       
     }
     #banner h1{
         font-size: 60px;
@@ -489,9 +545,12 @@ div.programacao-item-texto{
     .tablet {display:none;}
     .pc {display: none;}
 
+    header{
+        padding: 10px 20px;
+    }
     div#banner{
         text-align: center;
-        background-image: url('../img/bannerPrincipal.png');
+        background-image: url('../img/bannerPrincipalCelular.png');
         padding: 250px 0px;
     }
     #banner h1{

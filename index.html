@@ -9,6 +9,9 @@
 <body>
 <!-- -------------------------header------------------------- -->
 <header>
+  <div class="logo">
+    <img src="assets/img/logo.png" alt="logo">
+  </div>
     <nav class="navbar bg-body-tertiary-fixed-top">
       <div class="container-fluid">
         <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
@@ -16,19 +19,26 @@
         </button>
         <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
           <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-          </div>
-          <div class="offcanvas-body">
-            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#banner">Início</a>
-                <a class="nav-link active" aria-current="page" href="#programacao">Programação</a>
-                <a class="nav-link active" aria-current="page" href="#sobre">Sobre nós</a>
-                <a class="nav-link active" aria-current="page" href="#atividades">Atividades</a>
-                <a class="nav-link active" aria-current="page" href="#mapa">Localização</a>
-              </li>
-              </li>
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Rancho do Mineiro</h5> 
+              <div class="linha-offcanvas">
+                    <img src="assets/img/cordaDeitada.png" alt="imagem corda">
+              </div>
+            </div>
+
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>          
+                  <a class="nav-link active" aria-current="page" href="#banner">Início</a>
+                  <hr>
+                  <a class="nav-link active" aria-current="page" href="#programacao">Programação</a>
+                  <hr>
+                  <a class="nav-link active" aria-current="page" href="#sobre">Sobre nós</a>
+                  <hr>
+                  <a class="nav-link active" aria-current="page" href="#atividades">Atividades</a>
+                  <hr>
+                  <a class="nav-link active" aria-current="page" href="#mapa">Localização</a>
+                </li>
             </ul>
           </div>
         </div>
@@ -180,14 +190,18 @@
               <div class="card-atividades-texto texto-esquerda">
                 <h2>Passeio de Caiaque</h2>
                 <h4>Aventure-se pelas águas e aproveite momentos de diversão e contato com a natureza.</h4>
-                <a href="#" class="card-btn"></a>
+                <div class="card-btn">
+                  <h4>Sábado - 12h30 às 19h</h4>
+                </div>
               </div>
             </div>
             <div class="card-atividades item-direita">
               <div class="card-atividades-texto">
                 <h2>Passeio a Cavalo</h2>
                 <h4>Sinta a liberdade e viva uma experiência especial em meio à natureza, com um passeio tranquilo e cheio de aventura.</h4>
-                <a href="#" class="card-btn"></a>
+                <div class="card-btn">
+                  <h4>Sábado - 12h30 às 19h</h4>
+                </div>
               </div>
               <div class="card-atividades-img">
                 <img src="assets/img/passeioCavalo.jpg" alt="imagem do passeio de cavalo">
